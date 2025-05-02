@@ -1,0 +1,15 @@
+.footer-area .description a {
+  color: var(--color-body);
+  transition: var(--transition);
+  position: relative;
+}
+
+.footer-area .description {
+  padding: 0;
+}
+
+.footer-area {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

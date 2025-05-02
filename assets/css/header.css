@@ -1,0 +1,9 @@
+@media (max-width: 450px) {
+  #sideNav {
+    display: none;
+  }
+
+  .header-wrapper {
+    padding: 4px 14px;
+  }
+}
