@@ -1,3 +1,10 @@
+/* sections */
+
+.zoro-section-gap {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
 /* header */
 .zoro-header {
   box-shadow: var(--shadow-white-3);
@@ -56,15 +63,80 @@ nav a {
 /* hero section */
 
 .hero-section {
-  padding: 150px;
+  padding: 120px 100px;
+  gap: 100px;
 }
 
-.left-container {
+.container-left {
   gap: 20px;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 70px;
 }
 
-.container-left h2 {
+.subtitle {
+  color: var(--color-body-white);
+  font-size: var(--font-size-b3);
+  line-height: var(--line-height-b3);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.title {
   font-size: var(--h1);
+  color: var(--color-heading-wv);
+}
+
+.title span:nth-child(1) {
+  color: var(--color-primary);
+}
+
+.description {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: var(--color-body);
+  padding-right: 16%;
+  opacity: 0.9;
+}
+
+.social-icon-area {
+  gap: 200px;
+}
+.social-left {
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.social-icon {
+  list-style: none;
+  text-align: left;
+  padding: 15px 20px;
+  position: relative;
+  border-radius: 10px;
+  background: var(--gradient-box-w);
+  color: var(--color-body-white);
+  box-shadow: var(--shadow-white-3);
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  transition: 0.5s all ease-in-out;
+  display: inline-block;
+}
+
+.container-right {
+  width: 40%;
+  padding-bottom: 100px;
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
+  border-radius: 10px;
+}
+
+.container-right img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  margin: -100px;
 }
 
 /* =============== BLOG AREA ========== */
@@ -161,7 +233,7 @@ nav a {
 .zoro-portfolio .inner .content .title a,
 .zoro-blog .inner .content .title a {
   transition: var(--transition);
-  color: var(--color-lightn);
+  color: var(--color-heading-wv);
   font-weight: 600;
   font-size: 23px;
   line-height: 34px;
@@ -202,7 +274,7 @@ nav a {
   border-radius: 20px;
   top: 0;
   left: 0;
-  background: linear-gradient(to right bottom, #212428, #16181c);
+  background: white;
   opacity: 0;
   z-index: -1;
 }
@@ -218,6 +290,18 @@ nav a {
 .zoro-portfolio:hover video,
 .zoro-blog:hover video {
   transform: scale(1.1);
+}
+
+.zoro-blog-list,
+.zoro-portfolio-list {
+  padding-bottom: 50px;
+  gap: 32px;
+  padding-top: 50px;
+}
+
+.zoro-portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* Responsive media queries manually extracted */
@@ -261,6 +345,11 @@ nav a {
 @media (max-width: 575px) {
   .mt_dec-sm--60 {
     margin-top: -40px;
+  }
+
+  .zoro-portfolio-list {
+    grid-template-columns: 1fr;
+    padding: 12px;
   }
 }
 
@@ -471,4 +560,135 @@ button.zoro-btn {
   color: var(--color-white);
   box-shadow: var(--shadow-white-3);
   background-color: var(--color-primary) !important;
+}
+
+/* client section */
+
+.brand,
+.awesome-col-left,
+.awesome-menu-item {
+  border-radius: 10px;
+}
+
+.awesome-main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+  justify-content: start;
+}
+
+.awesome-col-left {
+  grid-column: span 2;
+  position: sticky;
+  top: 16px;
+  max-height: fit-content;
+}
+
+.awesome-col-right {
+  grid-column: span 3;
+}
+
+.awesome-main .client-name {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awesome-main .client-name a {
+  color: var(--color-body-white);
+  text-align: center;
+}
+
+.brand .thumbnail {
+  height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.brand .thumbnail img {
+  max-height: 90px;
+}
+
+.brand-footer {
+  border-top: 1px solid #dce1e4;
+}
+
+.awesome-main .active {
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
+  color: var(--color-primary);
+}
+
+.awesome-menu {
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
+  border-radius: 10px;
+}
+
+.awesome-menu-item {
+  padding: 30px;
+}
+
+.awesome-menu-item span {
+  text-align: center;
+}
+
+.awesome-group {
+  display: flex;
+  gap: 32px;
+}
+
+.awesome-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.awesome-group.hidden {
+  display: none;
+}
+
+/* ===================== RESPONSIVE CHIDIYA ================== */
+
+@media (max-width: 450px) {
+  .hero-section {
+    padding: 12px;
+  }
+
+  /* blogs section */
+
+  .zoro-blog-area {
+    padding: 12px;
+  }
+
+  .zoro-blog-list {
+    flex-direction: column;
+  }
+
+  .awesome-main {
+    padding: 12px;
+  }
+
+  .awesome-main .awesome-col-left,
+  .awesome-main .awesome-col-right {
+    grid-column: span 5;
+    position: static;
+  }
+
+  .awesome-group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .contact-inner-wrap {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .contact-inner-wrap .contact-about-area,
+  .contact-inner-wrap .contact-about-form {
+    width: 100%;
+  }
 }

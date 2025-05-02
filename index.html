@@ -6,6 +6,11 @@
     <title>Amisha's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <body>
     
@@ -25,7 +30,7 @@
           <!-- Start Header Center -->
           <div class="col-lg-10 col-6">
               <div class="header-center flex items-center">
-                  <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
+                  <nav id="sideNav" class="main-menu-nav navbar-example2 d-none d-xl-block onepagenav">
                       <!-- Start Mainmanu Nav -->
                       <ul class="primary-menu nav nav-pills flex items-center list-none">
                           <li class="nav-item current"><a class="nav-link" href="#home">Home</a></li>
@@ -61,37 +66,334 @@
 
     
     <!-- Hero section -->
-    <div class="hero-section">
-      <div class="container-left ">
-        <p>ṇelcome to my world</p>
-        <h2>Hi, I’m Jone Lee a </br><span>Developer</span> 
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas atque nesciunt libero praesentium,
-           suscipit officia sit deserunt sint nisi dolore corrupti placeat voluptatibus labore a asperiores similique numquam nemo rem.</p>
+    <div class="hero-section w-full h-full flex">
+      <div class="container-left flex ">
+        <div> <p class="subtitle">welcome to my world</p>
+            <h2 class="title">Hi, I'm <span>Jone Lee a </span><br><span>Developer</span> </h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas atque nesciunt libero praesentium,
+                suscipit officia sit deserunt sint nisi dolore corrupti placeat voluptatibus labore a asperiores similique numquam nemo rem.
+            </p>
+        </div>
+       <div class="flex social-icon-area">
+            <div>
+              <p class="subtitle">find with me</p>
+              <ul class=" flex social-left">
+                <li class="social-icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                <li class="social-icon"><i class="fa-brands fa-github"></i></li>
+              </ul>
+            </div>
+            <div>
+              <p class="subtitle">best skill on</p>
+              <ul class="flex social-left">
+                <li class="social-icon"><i class="fa-brands fa-wordpress"></i></li>
+                <li class="social-icon"><i class="fa-brands fa-wix"></i></li>
+              </ul>
+            </div>
+        </div>
+      
+    </div>
+
+      <div class="container-right flex justify-center items-center ">
+        <img src="https://edevhindi.com/wp-content/uploads/2025/04/banner-01.png" alt="">
       </div>
 
-      <div class="container-right">
-        <img src="#" alt="">
-      </div>
+      
+    </div>
 
-      <div>
+
+    <!-- Feature Section -->
+
+    <div class="container feature-section">
         <div>
-          <p>find with me</p>
-          <ul>
-            <li><a href="#">linkdln</a></li>
-            <li><a href="#">github</a></li>
-          </ul>
+            <span class=" subtitle">Feature</span>
+            <h2 class="title">What I Do</h2>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-light fa-bars"></i>
+                        <h4>Business Stratagy</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus in, modi voluptates
+                             deserunt similique minima asperiores maiores molestias 
+                            aliquam dolores consequatur laudantium quae eius praesentium nulla dolorem. Nihil, mollitia libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div>
-          <p>best skill on</p>
-          <ul>
-            <li><a href="#">Wordpress</a></li>
-            <li><a href="#">Wix</a></li>
-          </ul>
-        </div>
-      </div>
 
     </div>
+
+    <!-- Awesome Clients Start -->
+
+    <section class="zoro-awesome-clients section" id="clients">
+        <div class="container">
+            <div class="head section-title">
+                <span class="subtitle text-left">Popular Clients</span>
+                <h2 class="title text-left">Awesome Clients</h2>
+            </div>
+            
+            <div class="my-main">
+                <div class="grid awesome-main w-full">
+                    <div class="awesome-col-left">
+                        <ul class="list-none awesome-menu">
+                            <li class="awesome-menu-item cursor-pointer active" data-client-tab-title="javascript">
+                                <span class="w-full block text-center">JavaScript</span>
+                            </li>
+                            <li class="awesome-menu-item cursor-pointer" data-client-tab-title="wordpress">
+                                <span class="w-full block text-center">WordPress</span>
+                            </li>
+                            <li class="awesome-menu-item cursor-pointer" data-client-tab-title="wix">
+                                <span class="w-full block text-center">Wix</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="awesome-col-right" >
+                        <div class="awesome-group" data-client-tab-value="javascript">
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="awesome-group hidden" data-client-tab-value="wordpress">
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="awesome-group hidden" data-client-tab-value="wix">
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="brand">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/brand/brand-01.png" alt="">
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="brand-footer">
+                                    <div class="client-name">
+                                        <span><a href="#">John Due</a></span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Awesome Clients End -->
 
   <!-- ======== blog section ======= -->
 
@@ -105,10 +407,10 @@
                 </div>
             </div>
         </div>
-        <div class="flex" style="gap: 32px; margin-top: 32px;">
+        <div class="flex zoro-blog-list">
 
             <!-- Start Single blog -->
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 aos-init aos-animate">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="zoro-single-blog">
                 <div class="zoro-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                     <div class="inner">
                         <div class="thumbnail">
@@ -134,7 +436,7 @@
             <!-- End Single blog -->
 
             <!-- Start Single blog -->
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 aos-init aos-animate">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true" class="zoro-single-blog">
                 <div class="zoro-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                     <div class="inner">
                         <div class="thumbnail">
@@ -159,7 +461,7 @@
             <!-- End Single blog -->
 
             <!-- Start Single blog -->
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 aos-init aos-animate">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="zoro-single-blog">
                 <div class="zoro-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                     <div class="inner">
                         <div class="thumbnail">
@@ -189,6 +491,175 @@
 </div>
   
 
+<div class="zoro-portfolio-area zoro-section-gap section-separator" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center aos-init aos-animate">
+                    <span class="subtitle">Visit my portfolio and keep your feedback
+                    </span>
+                    <h2 class="title">Portfolio</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio list -->
+        <div class="row zoro-portfolio-list flex">
+            <!-- portfolio single -->
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="">
+                <div class="zoro-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    <div class="inner">
+                        <div class="thumbnail">
+                            <a href="javascript:void(0)">
+                                <img src="./assets/images/portfolio/portfolio-01.jpg" alt="Personal Portfolio Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="category-info">
+                                <div class="category-list">
+                                    <a href="javascript:void(0)">Development</a>
+                                </div>
+                                <div class="meta">
+                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                600</span>
+                                </div>
+                            </div>
+                            <h4 class="title"><a href="javascript:void(0)">The services provide for design <i class="feather-arrow-up-right"></i></a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="">
+                <div class="zoro-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    <div class="inner">
+                        <div class="thumbnail">
+                            <a href="javascript:void(0)">
+                                <img src="./assets/images/portfolio/portfolio-01.jpg" alt="Personal Portfolio Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="category-info">
+                                <div class="category-list">
+                                    <a href="javascript:void(0)">Development</a>
+                                </div>
+                                <div class="meta">
+                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                600</span>
+                                </div>
+                            </div>
+                            <h4 class="title"><a href="javascript:void(0)">The services provide for design <i class="feather-arrow-up-right"></i></a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="">
+                <div class="zoro-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    <div class="inner">
+                        <div class="thumbnail">
+                            <a href="javascript:void(0)">
+                                <img src="./assets/images/portfolio/portfolio-01.jpg" alt="Personal Portfolio Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="category-info">
+                                <div class="category-list">
+                                    <a href="javascript:void(0)">Development</a>
+                                </div>
+                                <div class="meta">
+                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                600</span>
+                                </div>
+                            </div>
+                            <h4 class="title"><a href="javascript:void(0)">The services provide for design <i class="feather-arrow-up-right"></i></a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="">
+                <div class="zoro-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    <div class="inner">
+                        <div class="thumbnail">
+                            <a href="javascript:void(0)">
+                                <img src="./assets/images/portfolio/portfolio-01.jpg" alt="Personal Portfolio Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="category-info">
+                                <div class="category-list">
+                                    <a href="javascript:void(0)">Development</a>
+                                </div>
+                                <div class="meta">
+                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                600</span>
+                                </div>
+                            </div>
+                            <h4 class="title"><a href="javascript:void(0)">The services provide for design <i class="feather-arrow-up-right"></i></a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="">
+                <div class="zoro-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    <div class="inner">
+                        <div class="thumbnail">
+                            <a href="javascript:void(0)">
+                                <img src="./assets/images/portfolio/portfolio-01.jpg" alt="Personal Portfolio Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="category-info">
+                                <div class="category-list">
+                                    <a href="javascript:void(0)">Development</a>
+                                </div>
+                                <div class="meta">
+                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                600</span>
+                                </div>
+                            </div>
+                            <h4 class="title"><a href="javascript:void(0)">The services provide for design <i class="feather-arrow-up-right"></i></a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="">
+                <div class="zoro-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    <div class="inner">
+                        <div class="thumbnail">
+                            <a href="javascript:void(0)">
+                                <img src="./assets/images/portfolio/portfolio-01.jpg" alt="Personal Portfolio Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="category-info">
+                                <div class="category-list">
+                                    <a href="javascript:void(0)">Development</a>
+                                </div>
+                                <div class="meta">
+                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                600</span>
+                                </div>
+                            </div>
+                            <h4 class="title"><a href="javascript:void(0)">The services provide for design <i class="feather-arrow-up-right"></i></a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zoro-resume-area zoro-section-gap section-separator" id="resume">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center aos-init aos-animate">
+                    <span class="subtitle">Visit my blog and keep your feedback</span>
+                    <h2 class="title">Resume</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
   
     <!-- ============= contact section ==================== -->
 
@@ -283,5 +754,24 @@
       </div>  
       </div>
     </section>
+
+    <div class="zoro-footer-area zoro-section-gap section-separator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-area text-center">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./assets/images/logo/logo-dark.png" alt="logo">
+                            </a>
+                        </div>
+                        <p class="description text-center p-0">© <script>document.write(new Date().getFullYear());</script>2025. All rights reserved by <a target="_blank" href="https://themeforest.net/user/parvinfotech/portfolio">Parv infotech.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/home.js"></script>
   </body>
 </html>
