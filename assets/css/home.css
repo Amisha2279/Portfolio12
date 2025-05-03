@@ -82,6 +82,7 @@ nav a {
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .title {
   font-size: var(--h1);
   color: var(--color-heading-wv);
@@ -124,6 +125,11 @@ nav a {
   display: inline-block;
 }
 
+.mouse-hover:hover {
+  background-color: rgb(252, 89, 139);
+  transform: translateY(-1px);
+}
+
 .container-right {
   width: 40%;
   padding-bottom: 100px;
@@ -137,6 +143,26 @@ nav a {
   max-width: 100%;
   height: auto;
   margin: -100px;
+}
+
+/* -----------Feature Area-------- */
+.feature-card-section {
+  gap: 30px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-icon {
+  font-size: 30px;
+  color: rgb(252, 89, 139);
+}
+
+.feature-title {
+  font-size: 24px;
 }
 
 /* =============== BLOG AREA ========== */
@@ -649,6 +675,239 @@ button.zoro-btn {
 .awesome-group.hidden {
   display: none;
 }
+
+/* ========================= RESUME SECTION START ====================  */
+
+.zoro-resume-area .zoro-tabs {
+  border-radius: 10px;  
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
+}
+
+.zoro-resume-area .zoro-resume-tab {
+  padding: 30px;
+}
+
+.zoro-resume-area .zoro-resume-tab:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.zoro-resume-area .zoro-resume-tab:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.zoro-resume-area .zoro-resume-tab.active {
+  border-radius: 10px;
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
+}
+
+.zoro-resume-area .experience-list {
+  border-left: 5px solid #d9dee2;
+}
+
+.experience-list {
+  padding-left: 31px;
+}
+
+.experience-list .resume-single-list .inner .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1a1d23;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.zoro-resume-area .experience-list .resume-single-list {
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
+}
+
+.experience-list .resume-single-list {
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+  padding: 45px 40px;
+  border-radius: 6px;
+  background: var(--background-color-1);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+}
+
+.experience-list .resume-single-list .inner .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1a1d23;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.zoro-resume-area .experience-list .resume-single-list .heading {
+  border-bottom: 1px solid #e3e9ed;
+}
+
+.experience-list .resume-single-list .inner .heading .date-of-time {
+  display: inline-block;
+}
+
+.experience-list .resume-single-list .inner .heading .date-of-time span {
+  color: var(--color-primary);
+  display: block;
+  font-size: 14px;
+  padding: 0 15px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 6px;
+  background: var(--background-color-1);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.zoro-resume-area
+  .experience-list
+  .resume-single-list
+  .heading
+  .date-of-time
+  span {
+  background: var(--color-white);
+  box-shadow: var(--shadow-white-3);
+}
+
+.zoro-resume-area
+  .experience-list
+  .resume-single-list
+  .inner
+  .heading
+  .title
+  h4 {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  line-height: 39px;
+  margin-bottom: 7px;
+  font-weight: 500;
+  transition: var(--transition);
+  color: var(--color-heading-wv);
+}
+
+.zoro-resume-area
+  .experience-list
+  .resume-single-list
+  .inner
+  .heading
+  .title
+  span {
+  color: #7c838e;
+  display: block;
+  font-size: 14px;
+}
+
+/* hover states */
+
+.experience-list .resume-single-list::before {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  background: var(--color-primary);
+  opacity: 0;
+  z-index: -1;
+}
+
+.experience-list .resume-single-list::before,
+.experience-list .resume-single-list > * {
+  color: white;
+}
+
+.experience-list .resume-single-list:hover::before {
+  opacity: 1;
+}
+
+.zoro-resume-area .experience-list .resume-single-list::before {
+  background: var(--gradient-red-hover);
+}
+
+.zoro-resume-area .experience-list .resume-single-list:hover .heading {
+  border-bottom: 1px solid rgb(206, 110, 110);
+}
+
+.zoro-resume-area
+  .experience-list
+  .resume-single-list:hover
+  .heading
+  .title
+  h4 {
+  color: var(--color-white);
+}
+.zoro-resume-area
+  .experience-list
+  .resume-single-list:hover
+  .heading
+  .title
+  span {
+  color: var(--color-white);
+}
+.zoro-resume-area
+  .experience-list
+  .resume-single-list:hover
+  .heading
+  .date-of-time
+  span {
+  box-shadow: none;
+  background: #fe024e;
+  color: var(--color-white);
+}
+
+.zoro-resume-area .experience-list .resume-single-list:hover .inner p {
+  color: var(--color-white);
+}
+
+.zoro-resume-area .experience-list .resume-single-list .inner::after {
+  border: 5px solid #d9dee2;
+  background: #ecf0f3;
+}
+
+.zoro-resume-area .experience-list .resume-single-list:hover .inner::after {
+  background: var(--color-primary);
+}
+
+.experience-list .resume-single-list .inner::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 5px solid #17191c;
+  border-radius: 100%;
+  right: 104%;
+  top: 55px;
+  transform: translateY(-7px);
+  background: #222529;
+  transition: var(--transition);
+}
+
+.experience-list .resume-single-list .inner::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 5px;
+  right: 100%;
+  top: 63px;
+  transform: translateY(-7px);
+  background: #1b1c1d;
+  z-index: 0;
+}
+
+.zoro-resume-area .experience-list .resume-single-list .inner::before {
+  background: #d9dee2;
+}
+
+/* ========================= RESUME SECTION END ====================  */
 
 /* ===================== RESPONSIVE CHIDIYA ================== */
 
