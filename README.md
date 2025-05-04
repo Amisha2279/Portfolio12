@@ -9,3 +9,4 @@ https://inbio.pixcelsthemes.com/inbio/index-white-version.html#
 ## Tasks
 
 - page responsiveness
+  complete remaining sections
