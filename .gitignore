@@ -1,4 +1,6 @@
-
-
 assets/images/*
 *.zip
+node_modules
+bin
+dist
+build
