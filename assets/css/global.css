@@ -95,6 +95,11 @@
   scroll-behavior: smooth;
 }
 
+.absolute {
+  position: absolute;
+  top: 0;
+}
+
 .text-black {
   color: black;
 }
