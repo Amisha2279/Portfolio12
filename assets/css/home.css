@@ -165,6 +165,65 @@ nav a {
   font-size: 24px;
 }
 
+/* -----------Feature Area-------- */
+
+.feature-box {
+  gap: 30px;
+}
+
+.feature-card-section {
+  gap: 30px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  padding: 30px;
+  position: relative;
+  border-radius: 20px;
+  /* background: var(--gradient-box-w); */
+  box-shadow: var(--shadow-white-3);
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  transition: 0.5s all ease-in-out;
+  display: inline-block;
+}
+
+.feature-icon {
+  font-size: 30px;
+  color: rgb(252, 89, 139);
+}
+
+.feature-title {
+  font-size: 24px;
+}
+
+.feature-card:hover {
+  background-color: var(--color-primary);
+}
+
+.feature-arrow {
+  visibility: hidden;
+}
+
+.feature-card:hover .feature-arrow {
+  visibility: visible;
+  color: white;
+}
+
+.inner-box:hover {
+  transform: translateY(-20px);
+}
+
+.feature-card:hover .feature-icon i,
+.feature-card:hover .feature-title,
+.feature-card:hover p {
+  color: white;
+}
+
 /* =============== BLOG AREA ========== */
 .zoro-portfolio,
 .zoro-blog {
@@ -682,11 +741,10 @@ button.zoro-btn {
   width: 876px;
 }
 
- 
 .testimonial .inner .card-description {
   position: relative;
   padding: 50px 40px 50px 40px;
-  border-radius: 10px;  
+  border-radius: 10px;
   margin-top: 115px;
 }
 
