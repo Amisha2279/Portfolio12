@@ -9,6 +9,7 @@
 .zoro-header {
   box-shadow: var(--shadow-white-3);
 }
+
 .header-wrapper {
   max-width: 1440px;
   margin: auto;
@@ -60,7 +61,7 @@ nav a {
   text-decoration: none;
 }
 
-/* hero section */
+/*============ hero section============ */
 
 .hero-section {
   padding: 120px 100px;
@@ -104,6 +105,7 @@ nav a {
 .social-icon-area {
   gap: 200px;
 }
+
 .social-left {
   gap: 20px;
   padding-top: 15px;
@@ -145,6 +147,83 @@ nav a {
   margin: -100px;
 }
 
+/* ------------Responsive - Hero-Section----------- */
+
+@media (max-width:768px) {
+  .hero-section {
+    padding: 90px 50px;
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .container-right {
+    width: 100%;
+    margin: 20px 0 10px 0;
+    padding: 0px;
+  }
+
+  .container-right img {
+    margin: 0px;
+    max-width: 80%;
+    height: auto;
+  }
+
+
+  .container-left{
+    width: 100%;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .subtitle {
+   font-size: 14px;
+  }
+
+  .title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .description {
+    font-size: 17px;
+    line-height: 26px;
+    padding-right: 0;
+  }
+
+  .social-icon-area{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .social-left {
+    gap: 20px;
+    padding-top: 10px;
+  }
+}
+
+/* ------------Responsive - Feature-Section-----------  */
+
+@media (max-width:768px){
+  .feature-section{
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .feature-section .title{
+    padding-bottom:25px;
+  }
+
+  .feature-card-section{
+    flex-direction: column;
+  }
+
+  .inner-box>p {
+    font-size: 17px;
+  }
+}
+
+
 /* -----------Feature Area-------- */
 .feature-card-section {
   gap: 30px;
@@ -164,8 +243,6 @@ nav a {
 .feature-title {
   font-size: 24px;
 }
-
-/* -----------Feature Area-------- */
 
 .feature-box {
   gap: 30px;
@@ -391,6 +468,7 @@ nav a {
 
 /* Responsive media queries manually extracted */
 @media (max-width: 991px) {
+
   .zoro-portfolio,
   .zoro-blog {
     padding: 30px;
@@ -403,6 +481,7 @@ nav a {
 }
 
 @media (max-width: 575px) {
+
   .zoro-portfolio,
   .zoro-blog {
     padding: 20px;
@@ -928,23 +1007,12 @@ button.zoro-btn {
   font-weight: 500;
 }
 
-.zoro-resume-area
-  .experience-list
-  .resume-single-list
-  .heading
-  .date-of-time
-  span {
+.zoro-resume-area .experience-list .resume-single-list .heading .date-of-time span {
   background: var(--color-white);
   box-shadow: var(--shadow-white-3);
 }
 
-.zoro-resume-area
-  .experience-list
-  .resume-single-list
-  .inner
-  .heading
-  .title
-  h4 {
+.zoro-resume-area .experience-list .resume-single-list .inner .heading .title h4 {
   font-family: var(--font-primary);
   font-size: 24px;
   line-height: 39px;
@@ -954,13 +1022,7 @@ button.zoro-btn {
   color: var(--color-heading-wv);
 }
 
-.zoro-resume-area
-  .experience-list
-  .resume-single-list
-  .inner
-  .heading
-  .title
-  span {
+.zoro-resume-area .experience-list .resume-single-list .inner .heading .title span {
   color: #7c838e;
   display: block;
   font-size: 14px;
@@ -983,7 +1045,7 @@ button.zoro-btn {
 }
 
 .experience-list .resume-single-list::before,
-.experience-list .resume-single-list > * {
+.experience-list .resume-single-list>* {
   color: white;
 }
 
@@ -999,28 +1061,15 @@ button.zoro-btn {
   border-bottom: 1px solid rgb(206, 110, 110);
 }
 
-.zoro-resume-area
-  .experience-list
-  .resume-single-list:hover
-  .heading
-  .title
-  h4 {
+.zoro-resume-area .experience-list .resume-single-list:hover .heading .title h4 {
   color: var(--color-white);
 }
-.zoro-resume-area
-  .experience-list
-  .resume-single-list:hover
-  .heading
-  .title
-  span {
+
+.zoro-resume-area .experience-list .resume-single-list:hover .heading .title span {
   color: var(--color-white);
 }
-.zoro-resume-area
-  .experience-list
-  .resume-single-list:hover
-  .heading
-  .date-of-time
-  span {
+
+.zoro-resume-area .experience-list .resume-single-list:hover .heading .date-of-time span {
   box-shadow: none;
   background: #fe024e;
   color: var(--color-white);
